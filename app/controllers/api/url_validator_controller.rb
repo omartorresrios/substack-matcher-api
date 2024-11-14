@@ -2,6 +2,7 @@ require 'net/http'
 
 module Api
   class UrlValidatorController < ApplicationController
+    # really cool
     def validate
       url = params[:url]
       is_valid = validate_substack_url(url)
